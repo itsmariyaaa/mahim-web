@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Your Order | The Vintage Cup</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+<header class="navbar">
+
+<a href="index.html" class="brand">
+
+<span class="logo">☕</span>
+
+<span>
+<b>The Vintage Cup</b>
+<small>CAFÉ & RESTAURANT</small>
+</span>
+
+</a>
+
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="menu.html">Menu</a>
+<a href="about.html">About</a>
+<a href="gallery.html">Gallery</a>
+<a href="contact.html">Contact</a>
+
+</nav>
+
+
+<div class="nav-actions">
+
+<a href="order.html" class="cart">
+🛒
+<span id="cartCount">0</span>
+</a>
+
+</div>
+
+</header>
+
+
+<section class="page-hero">
+
+<div>
+
+<h1>
+Your Order
+</h1>
+
+<p>
+Good Food. Good Mood.
+</p>
+
+</div>
+
+</section>
+
+
+<main class="paper order-page">
+
+<div class="order-layout">
+
+
+<!-- ORDER ITEMS -->
+
+<section class="order-box">
+
+<h2>
+Your Items
+</h2>
+
+<div id="orderItems"></div>
+
+
+<div class="totals">
+
+<p>
+Subtotal
+<b id="subtotal">৳0</b>
+</p>
+
+<p>
+Delivery Fee
+<b>৳50</b>
+</p>
+
+<hr>
+
+<p class="total">
+Total
+<b id="total">৳50</b>
+</p>
+
+</div>
+
+
+<a
+href="menu.html"
+class="btn dark full"
+>
+Continue Shopping
+</a>
+
+</section>
+
+
+
+<!-- DELIVERY FORM -->
+
+<form
+action="order.php"
+method="POST"
+class="delivery-form"
+>
+
+<h2>
+Delivery Information
+</h2>
+
+
+<label>
+
+Name *
+
+<input
+type="text"
+name="name"
+placeholder="Your Name"
+required
+>
+
+</label>
+
+
+<label>
+
+Phone *
+
+<input
+type="text"
+name="phone"
+placeholder="+880 1712 345678"
+required
+>
+
+</label>
+
+
+<label>
+
+Email
+
+<input
+type="email"
+name="email"
+placeholder="your@email.com"
+>
+
+</label>
+
+
+<label>
+
+Address *
+
+<textarea
+name="address"
+placeholder="Full Address"
+required
+></textarea>
+
+</label>
+
+
+<label>
+
+Select Payment Method
+
+<select name="payment">
+
+<option>
+Cash on Delivery
+</option>
+
+<option>
+Online Payment
+</option>
+
+</select>
+
+</label>
+
+
+<input
+type="hidden"
+name="order_data"
+id="orderData"
+>
+
+
+<button
+type="submit"
+class="btn dark full"
+>
+Place Order
+</button>
+
+
+</form>
+
+
+</div>
+
+</main>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

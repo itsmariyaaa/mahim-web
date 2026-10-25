@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Suzy's Cafe | Menu</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+<header class="navbar">
+
+<a href="index.html" class="brand">
+
+<span class="logo">☕</span>
+
+<span>
+<b>Suzy's Cafe</b>
+<small>CAFÉ & RESTAURANT</small>
+</span>
+
+</a>
+
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="menu.html" class="active">Menu</a>
+<a href="about.html">About</a>
+<a href="gallery.html">Gallery</a>
+<a href="contact.html">Contact</a>
+
+</nav>
+
+
+<div class="nav-actions">
+
+<button id="searchBtn">⌕</button>
+
+<a href="order.html" class="cart">
+🛒
+<span id="cartCount">0</span>
+</a>
+
+</div>
+
+</header>
+
+
+<!-- PAGE HEADER -->
+
+<section class="page-hero">
+
+<div>
+
+<h1>
+Our Menu
+</h1>
+
+<p>
+Good Food　·　Great Drinks　·　Happy Moments
+</p>
+
+</div>
+
+</section>
+
+
+<main class="paper menu-page">
+
+
+<!-- FILTER -->
+
+<div class="menu-toolbar">
+
+<div class="filters">
+
+<button class="filter active" data-filter="all">
+All
+</button>
+
+<button class="filter" data-filter="hot">
+    
+Hot Drinks
+</button>
+
+<button class="filter" data-filter="cold">
+Cold Drinks
+</button>
+
+<button class="filter" data-filter="snacks">
+Snacks
+</button>
+
+<button class="filter" data-filter="burger">
+Burgers & Sandwiches
+</button>
+
+<button class="filter" data-filter="pizza">
+Pizza & Pasta
+</button>
+
+<button class="filter" data-filter="dessert">
+Desserts
+</button>
+
+<button class="filter" data-filter="combo">
+Combos
+</button>
+
+</div>
+
+
+<input
+id="menuSearch"
+type="search"
+placeholder="Search menu..."
+>
+
+</div>
+
+
+<!-- MENU -->
+
+<div class="menu-columns">
+
+
+<section class="menu-box" data-category="hot">
+
+<h2>
+☕ Hot Drinks
+</h2>
+<img src="https://media.istockphoto.com/id/1902671994/photo/close-up-hot-cappuccino-ceramic-black-coffee-cup-with-heart-shape-latte-art-on-the-wooden.jpg?s=612x612&w=0&k=20&c=R5khlqNB08WliNCarcUTEzFqJvgtO0t-ibN1eiYw5v0=" alt="">
+<div class="menu-list">
+
+<div>
+Classic Tea
+<b>৳60</b>
+</div>
+
+<div>
+Masala Tea
+<b>৳120</b>
+</div>
+
+<div>
+Lemon Tea
+<b>৳100</b>
+</div>
+
+<div>
+Milk Tea
+<b>৳100</b>
+</div>
+
+<div>
+Cappuccino
+<b>৳150</b>
+</div>
+
+<div>
+Cafe Latte
+<b>৳180</b>
+</div>
+
+<div>
+Americano
+<b>৳150</b>
+</div>
+
+<div>
+Mocha
+<b>৳220</b>
+</div>
+
+<div>
+Hot Chocolate
+<b>৳220</b>
+</div>
+
+<div>
+Vintage Special Coffee
+<b>৳250</b>
+</div>
+
+</div>
+
+</section>
+
+
+<section class="menu-box" data-category="cold">
+
+<h2>
+🥤 Cold Drinks
+</h2>
+<img src="https://plus.unsplash.com/premium_photo-1725075086083-89117890371d?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y29sZCUyMGRyaW5rc3xlbnwwfHwwfHx8MA%3D%3D" alt="">
+<div class="menu-list">
+
+<div>Classic Lemonade <b>৳120</b></div>
+<div>Mint Lemonade <b>৳150</b></div>
+<div>Blue Lagoon <b>৳180</b></div>
+<div>Virgin Mojito <b>৳180</b></div>
+<div>Peach Iced Tea <b>৳170</b></div>
+<div>Cold Coffee <b>৳200</b></div>
+<div>Chocolate Frappe <b>৳230</b></div>
+<div>Oreo Shake <b>৳240</b></div>
+<div>Strawberry Shake <b>৳210</b></div>
+
+</div>
+
+</section>
+
+
+<section class="menu-box" data-category="snacks">
+
+<h2>
+🍟 Snacks
+</h2>
+<img src="https://savithrammas.com/site/image/cache/catalog/Warming-Up-Winter-Savithrammas-Guide-to-Cozy-Snacks-1080x540.jpg" alt="">
+<div class="menu-list">
+
+<div>Fresh Fries <b>৳150</b></div>
+<div>Cheesy Fries <b>৳220</b></div>
+<div>Chicken Nuggets <b>৳300</b></div>
+<div>Chicken Popcorn <b>৳200</b></div>
+<div>Onion Rings <b>৳160</b></div>
+<div>Mozzarella Sticks <b>৳250</b></div>
+<div>Chicken Wings <b>৳280</b></div>
+<div>Garlic Bread <b>৳180</b></div>
+<div>Nachos <b>৳250</b></div>
+<div>Loaded Nachos <b>৳320</b></div>
+
+</div>
+
+</section>
+
+
+<section class="menu-box" data-category="burger">
+
+<h2>
+🍔 Burgers & Sandwiches
+</h2>
+<img src="https://static.wixstatic.com/media/91e241_af4c99a29cff48e6bcfba812b34a9e0b~mv2.jpg/v1/fill/w_377,h_263,al_c,lg_1,q_80/91e241_af4c99a29cff48e6bcfba812b34a9e0b~mv2.jpg" alt="">
+<div class="menu-list">
+
+<div>Classic Chicken Sandwich <b>৳250</b></div>
+<div>Club Sandwich <b>৳320</b></div>
+<div>Grilled Cheese Sandwich <b>৳270</b></div>
+<div>Chicken Burger <b>৳280</b></div>
+<div>Classic Beef Burger <b>৳350</b></div>
+<div>Vintage Special Burger <b>৳400</b></div>
+
+</div>
+
+</section>
+
+
+<section class="menu-box" data-category="pizza">
+
+<h2>
+🍕 Pizza & Pasta
+</h2>
+<img src="https://images.squarespace-cdn.com/content/v1/5f0a575f2b3bb20c7584bc42/1678747609200-3NAMAUT52R1Y091DNBYB/PizzaPastaKitchen_LeighGriffiths-68.jpg" alt="">
+<div class="menu-list">
+
+<div>Margherita Pizza <b>৳350</b></div>
+<div>Chicken Cheese Pizza <b>৳420</b></div>
+<div>Pepperoni Pizza <b>৳450</b></div>
+<div>Creamy Chicken Pasta <b>৳300</b></div>
+<div>Alfredo Pasta <b>৳320</b></div>
+<div>Arrabbiata Pasta <b>৳320</b></div>
+<div>Chicken Mushroom Pasta <b>৳400</b></div>
+
+</div>
+
+</section>
+
+
+<section class="menu-box" data-category="dessert">
+
+<h2>
+🍰 Desserts
+</h2>
+<img src="https://images.squarespace-cdn.com/content/v1/5f0a575f2b3bb20c7584bc42/1678747609200-3NAMAUT52R1Y091DNBYB/PizzaPastaKitchen_LeighGriffiths-68.jpg" alt="">
+<div class="menu-list">
+
+<div>Chocolate Brownie <b>৳180</b></div>
+<div>Brownie with Ice Cream <b>৳250</b></div>
+<div>Classic Cheesecake <b>৳230</b></div>
+<div>Chocolate Cake <b>৳220</b></div>
+<div>Red Velvet Cake <b>৳250</b></div>
+<div>Apple Pie <b>৳230</b></div>
+<div>Waffle with Ice Cream <b>৳280</b></div>
+<div>Pancake Stack <b>৳350</b></div>
+<div>Vintage Dessert Platter <b>৳450</b></div>
+
+</div>
+
+</section>
+
+</div>
+
+
+<h2 class="center-heading">
+♛ Special Combos
+</h2>
+
+
+<div class="combo-grid">
+
+<div class="combo-card">
+
+<h3>
+Afternoon Tea Set
+</h3>
+
+<p>
+Tea · Sandwich · Fries · Cake
+</p>
+
+<b>
+৳799
+</b>
+
+</div>
+
+
+<div class="combo-card">
+
+<h3>
+Vintage Burger Combo
+</h3>
+
+<p>
+Burger · Fries · Soft Drink
+</p>
+
+<b>
+৳499
+</b>
+
+</div>
+
+
+<div class="combo-card">
+
+<h3>
+Sweet Duo Set
+</h3>
+
+<p>
+2 Brownies · 2 Coffee · Churros
+</p>
+
+<b>
+৳650
+</b>
+
+</div>
+
+
+<div class="combo-card">
+
+<h3>
+Old School Platter
+</h3>
+
+<p>
+Wings · Nuggets · Fries · Nachos · Drinks
+</p>
+
+<b>
+৳750
+</b>
+
+</div>
+
+</div>
+
+</main>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
+

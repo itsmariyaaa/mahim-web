@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gallery | Suzy's Cafe</title>
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+   
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+
+<header class="header">
+
+    <div class="logo-area">
+        <div class="logo-icon">
+            <i class="fa-solid fa-mug-hot"></i>
+        </div>
+
+        <div class="logo-text">
+            <h2>Suzy's Cafe</h2>
+            <span>CAFÉ & RESTAURANT</span>
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html" class="active">Gallery</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="header-icons">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+    </div>
+
+</header>
+
+
+
+
+<section class="gallery-hero">
+
+    <div class="hero-overlay">
+
+        <span class="small-title">OUR MEMORIES</span>
+
+        <h1>Gallery</h1>
+
+        <p>
+            A glimpse into our food, café and happy moments.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+
+<section class="gallery-section">
+
+    <div class="section-heading">
+
+        <span>OUR COLLECTION</span>
+
+        <h2>Moments at Suzy's Cafe</h2>
+
+        <p>
+            From freshly brewed coffee to delicious meals,
+            every moment at Suzy's Cafe is made to be remembered.
+        </p>
+
+    </div>
+
+
+  
+
+    <div class="gallery-filter">
+
+        <button class="filter-btn active" data-filter="all">
+            All
+        </button>
+
+        <button class="filter-btn" data-filter="coffee">
+            Coffee
+        </button>
+
+        <button class="filter-btn" data-filter="food">
+            Food
+        </button>
+
+        <button class="filter-btn" data-filter="dessert">
+            Desserts
+        </button>
+
+        <button class="filter-btn" data-filter="cafe">
+            Café
+        </button>
+
+    </div>
+
+
+   
+
+    <div class="gallery-grid">
+
+
+      
+
+        <div class="gallery-item coffee cafe">
+
+            <img src="https://images.pexels.com/photos/16053051/pexels-photo-16053051.jpeg?cs=srgb&dl=pexels-mutecevvil-16053051.jpg&fm=jpg" alt="Vintage Coffee">
+
+            <div class="gallery-overlay">
+
+                <div>
+                    <span>Coffee</span>
+                    <h3>Morning Coffee</h3>
+                </div>
+
+                <button class="view-btn"
+                        onclick="openLightbox('images/gallery1.jpg','Morning Coffee')">
+                    <i class="fa-solid fa-expand"></i>
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="gallery-item food">
+
+            <img src="https://www.recipetineats.com/tachyon/2023/09/Crispy-fried-chicken-burgers_5.jpg" alt="Chicken Burger">
+
+            <div class="gallery-overlay">
+
+                <div>
+                    <span>Food</span>
+                    <h3>Classic Burger</h3>
+                </div>
+
+                <button class="view-btn"
+                        onclick="openLightbox('images/gallery2.jpg','Classic Burger')">
+                    <i class="fa-solid fa-expand"></i>
+                </button>
+
+            </div>
+
+        </div>
+
+
+    
+
+        <div class="gallery-item dessert">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbTzkO3Yr0HGUJZs3SAlda1it_DRpOi0Iq2Wu-fAblBEKJp7q4H1kUd8w&s=10" alt="Chocolate Brownie">
+
+            <div class="gallery-overlay">
+
+                <div>
+                    <span>Dessert</span>
+                    <h3>Chocolate Brownie</h3>
+                </div>
+
+                <button class="view-btn"
+                        onclick="openLightbox('images/gallery3.jpg','Chocolate Brownie')">
+                    <i class="fa-solid fa-expand"></i>
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="gallery-item food">
+
+            <img src="https://www.pmq.com/wp-content/uploads/2019/04/PIZZAFAMILY.jpg" alt="Pizza">
+
+            <div class="gallery-overlay">
+
+                <div>
+                    <span>Food</span>
+                    <h3>Fresh Pizza</h3>
+                </div>
+
+                <button class="view-btn"
+                        onclick="openLightbox('images/gallery4.jpg','Fresh Pizza')">
+                    <i class="fa-solid fa-expand"></i>
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+
+        <div class="gallery-item coffee">
+
+            <img src="https://images.immediate.co.uk/production/volatile/sites/30/2023/12/Dirty-chai-latte-b5c00fc.jpg?quality=90&resize=708,643" alt="Latte">
+
+            <div class="gallery-overlay">
+
+                <div>
+                    <span>Coffee</span>
+                    <h3>Classic Latte</h3>
+                </div>
+
+                <button class="view-btn"
+                        onclick="openLightbox('images/gallery5.jpg','Classic Latte')">
+                    <i class="fa-solid fa-expand"></i>
+                </button>
+
+            </div>
+
+        </div>
+
+
+  
+
+        <div class="gallery-item cafe">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI0X1ayUY8FyAb4x2zMo3iftHXD3Tb0efcOcYvh_reat7s5_CzakspdCBB&s=10" alt="Vintage Cafe">
+
+            <div class="gallery-overlay">
+
+                <div>
+                    <span>Café</span>
+                    <h3>Our Cozy Corner</h3>
+                </div>
+
+                <button class="view-btn"
+                        onclick="openLightbox('images/gallery6.jpg','Our Cozy Corner')">
+                    <i class="fa-solid fa-expand"></i>
+                </button>
+
+            </div>
+
+        </div>
+
+
+     
+
+        <div class="gallery-item dessert">
+
+            <img src="https://www.jocooks.com/wp-content/uploads/2025/02/chocolate-cheesecake-1-3.jpg" alt="Cheesecake">
+
+            <div class="gallery-overlay">
+
+                <div>
+                    <span>Dessert</span>
+                    <h3>Fresh Cheesecake</h3>
+                </div>
+
+                <button class="view-btn"
+                        onclick="openLightbox('images/gallery7.jpg','Fresh Cheesecake')">
+                    <i class="fa-solid fa-expand"></i>
+                </button>
+
+            </div>
+
+        </div>
+
+
+      
+
+        <div class="gallery-item cafe">
+
+            <img src="https://images.stockcake.com/public/d/7/9/d7978a45-b187-4c0d-9253-cf0bf5cc149c_large/cozy-cafe-interior-stockcake.jpg" alt="Cafe Interior">
+
+            <div class="gallery-overlay">
+
+                <div>
+                    <span>Café</span>
+                    <h3>Vintage Ambience</h3>
+                </div>
+
+                <button class="view-btn"
+                        onclick="openLightbox('images/gallery8.jpg','Vintage Ambience')">
+                    <i class="fa-solid fa-expand"></i>
+                </button>
+
+            </div>
+
+        </div>
+
+
+       
+        <div class="gallery-item food">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPSthVz2QnaqopoD4j-CIS5IgQ4StYQ9xjx8tHAhW5EXaQI6e-4A1SSjzv&s=10" alt="French Fries">
+
+            <div class="gallery-overlay">
+
+                <div>
+                    <span>Food</span>
+                    <h3>Crispy Fries</h3>
+                </div>
+
+                <button class="view-btn"
+                        onclick="openLightbox('images/gallery9.jpg','Crispy Fries')">
+                    <i class="fa-solid fa-expand"></i>
+                </button>
+
+            </div>
+
+        </div>
+
+
+  
+
+        <div class="gallery-item coffee">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWnzWNvnMiFpELJ6ZOLbws76eZxdIAT1glKCVVfyDIHx_iJa9DhPbsiifr&s=10" alt="Special Coffee">
+
+            <div class="gallery-overlay">
+
+                <div>
+                    <span>Coffee</span>
+                    <h3>Special Coffee</h3>
+                </div>
+
+                <button class="view-btn"
+                        onclick="openLightbox('images/gallery10.jpg','Special Coffee')">
+                    <i class="fa-solid fa-expand"></i>
+                </button>
+
+            </div>
+
+        </div>
+
+
+    
+
+        <div class="gallery-item dessert">
+
+            <img src="https://www.cookwithmanali.com/wp-content/uploads/2014/11/Indian-Butterscotch-Ice-Cream-No-Churn.jpg" alt="Ice Cream">
+
+            <div class="gallery-overlay">
+
+                <div>
+                    <span>Dessert</span>
+                    <h3>Vanilla Ice Cream</h3>
+                </div>
+
+                <button class="view-btn"
+                        onclick="openLightbox('images/gallery11.jpg','Vanilla Ice Cream')">
+                    <i class="fa-solid fa-expand"></i>
+                </button>
+
+            </div>
+
+        </div>
+
+
+  
+
+        <div class="gallery-item cafe">
+
+            <img src="https://static.dezeen.com/uploads/2026/07/genso-hong-kong-restaurant-interiors-joyce-wang-studio-2_dezeen_sq-1-411x411.jpg" alt="Restaurant Interior">
+
+            <div class="gallery-overlay">
+
+                <div>
+                    <span>Café</span>
+                    <h3>Our Vintage Space</h3>
+                </div>
+
+                <button class="view-btn"
+                        onclick="openLightbox('images/gallery12.jpg','Our Vintage Space')">
+                    <i class="fa-solid fa-expand"></i>
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+<section class="gallery-quote">
+
+    <div class="quote-icon">
+        <i class="fa-solid fa-quote-left"></i>
+    </div>
+
+    <h2>
+        Good Food. Old Memories.
+        <br>
+        Timeless Moments.
+    </h2>
+
+    <p>
+        Every cup, every plate and every corner
+        has a story to tell.
+    </p>
+
+</section>
+
+
+
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+
+       
+
+        <div class="footer-brand">
+
+            <div class="footer-logo">
+                <i class="fa-solid fa-mug-hot"></i>
+
+                <div>
+                    <h3>Suzy's Cafe</h3>
+                    <span>CAFÉ & RESTAURANT</span>
+                </div>
+            </div>
+
+            <p>
+                Good food, great drinks and beautiful
+                memories — all in one place.
+            </p>
+
+            <div class="social-icons">
+
+                <a href="#">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-pinterest-p"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+     
+
+        <div class="footer-column">
+
+            <h4>Quick Links</h4>
+
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="about.html">About</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+
+        </div>
+
+
+
+        <div class="footer-column">
+
+            <h4>Opening Hours</h4>
+
+            <p>Mon - Fri</p>
+            <span>10:00 AM - 10:00 PM</span>
+
+            <p>Saturday</p>
+            <span>10:00 AM - 11:00 PM</span>
+
+            <p>Sunday</p>
+            <span>09:00 AM - 11:00 PM</span>
+
+        </div>
+
+
+      
+
+        <div class="footer-column">
+
+            <h4>Contact Us</h4>
+
+            <p>
+                <i class="fa-solid fa-location-dot"></i>
+                123 Suzy's Cafe,
+                Sylhet, Bangladesh
+            </p>
+
+            <p>
+                <i class="fa-solid fa-phone"></i>
+                +880 1817381719
+            </p>
+
+            <p>
+                <i class="fa-solid fa-envelope"></i>
+                SuzysCafe@gmail.com
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2025 Suzy's Cafe. All rights reserved.
+        </p>
+
+        <p>
+            Made with <i class="fa-solid fa-heart"></i>
+            for coffee lovers.
+        </p>
+
+    </div>
+
+</footer>
+
+
+
+
+<div class="lightbox" id="lightbox">
+
+    <button class="close-lightbox" onclick="closeLightbox()">
+        <i class="fa-solid fa-xmark"></i>
+    </button>
+
+    <img id="lightbox-img" src="" alt="Gallery Image">
+
+    <div class="lightbox-caption" id="lightbox-caption"></div>
+
+</div>
+
+
+<script src="gallery.js"></script>
+
+</body>
+</html>
